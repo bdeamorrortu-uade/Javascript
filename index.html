@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./js/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://d8285fmxt3duy.cloudfront.net/public/articulos/img/java-script1.jpg"
+        alt="Javascript Logo"
+      />
+    </header>
+    <main>
+      <h2>Ejercicios</h2>
+
+      <div class="exercise-container">
+        <h3>1. Variables con datos personales al azar</h3>
+        <p class="instruction">Mostrar datos personales predefinidos</p>
+        <button onclick="getHardcodedData()">Ejecutar ejercicio 1</button>
+        <p id="result-1"></p>
+      </div>
+
+      <div class="exercise-container">
+        <h3>2. Ingresar datos del usuario</h3>
+        <p class="instruction">
+          Solicitar y mostrar datos personales del usuario
+        </p>
+        <button onclick="askUserData()">Ejecutar ejercicio 2</button>
+        <p id="result-2"></p>
+      </div>
+
+      <div class="exercise-container">
+        <h3>3. Calcular días vividos</h3>
+        <p class="instruction">
+          Calcular días vividos desde la fecha de nacimiento
+        </p>
+        <form id="form3">
+          <label for="date-of-birth">Fecha de nacimiento:</label>
+          <input type="date" id="date-of-birth" name="date-of-birth" />
+          <button type="button" onclick="calculateDaysLived()">
+            Calcular días vividos
+          </button>
+        </form>
+        <p id="result-3"></p>
+      </div>
+      <button onclick="resetResults()" class="reset-button">
+        Reiniciar Resultados
+      </button>
+    </main>
+    <footer>
+      <p>Belén de Amorrortu - Diseño y Desarrollo Web - UADE</p>
+    </footer>
+  </body>
+</html>
