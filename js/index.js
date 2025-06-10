@@ -26,6 +26,9 @@ function askUserData() {
 
 // Ejercicio 3: Calcular días vividos
 function calculateDaysLived() {
+  if (!firstName || !lastName || !favoriteColor) {
+    return alert("Por favor, complete los datos del usuario del ejercicio 2");
+  }
   const dateOfBirthValue = document.getElementById("date-of-birth").value;
 
   if (!dateOfBirthValue) {
