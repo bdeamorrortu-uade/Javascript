@@ -1,17 +1,17 @@
-let firstName;
-let lastName;
-let favoriteColor;
-
 // Ejercicio 1: Variables con datos personales al azar
 function getHardcodedData() {
-  firstName = "Belén";
-  lastName = "de Amorrortu";
-  favoriteColor = "Azul";
+  const firstName = "Belén";
+  const lastName = "de Amorrortu";
+  const favoriteColor = "Azul";
 
   document.getElementById(
     "result-1"
   ).innerHTML = `Bienvenid@ ${firstName} ${lastName}! Color favorito: ${favoriteColor}`;
 }
+
+let firstName;
+let lastName;
+let favoriteColor;
 
 // Ejercicio 2: Ingresar datos del usuario
 function askUserData() {
